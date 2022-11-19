@@ -278,7 +278,7 @@ a {
   .btn.btn-primary {
     color: #fff; }
     .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-      background: #b2c251;}
+      background: #fff;}
 
 .progress {
   overflow: visible;
@@ -648,4 +648,19 @@ a {
   .morelink:visited{
     color: #b2c251;
     text-decoration-line: none;
+  }
+
+  a.fa-github, a.fa-github:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  a.fa-linkedin, a.fa-linkedin:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  a.fa-instagram, a.fa-instagram:hover {
+    color: #ffffff;
+    text-decoration: none;
   }
