@@ -650,17 +650,27 @@ a {
     text-decoration-line: none;
   }
 
-  a.fa-github, a.fa-github:hover {
+  a.fa-github, a.fa-github:focus, a.fa-linkedin, a.fa-linkedin:focus, a.fa-instagram, a.fa-instagram:focus, a.fa-envolope, a.fa-envelope:focus{
     color: #ffffff;
     text-decoration: none;
   }
 
-  a.fa-linkedin, a.fa-linkedin:hover {
-    color: #ffffff;
+  a.fa-github:hover, a.fa-github:active {
+    color: #6cc644;
     text-decoration: none;
   }
 
-  a.fa-instagram, a.fa-instagram:hover {
-    color: #ffffff;
+  a.fa-linkedin:hover {
+    color: #0e76a8;
+    text-decoration: none;
+  }
+
+  a.fa-instagram:hover {
+    color: #dd2a7b;
+    text-decoration: none;
+  }
+
+  a.fa-envelope:hover {
+    color: #84f9ff;
     text-decoration: none;
   }
