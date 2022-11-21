@@ -679,3 +679,7 @@ a {
     color: #fff200;
     text-decoration: none;
   }
+
+a.btn{
+  color: #ffffff;
+}
