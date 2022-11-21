@@ -231,6 +231,18 @@
 		</div>
 	</section>
 
+	<!-- Calendly inline widget begin -->
+	<div class="calendly-inline-widget" style="min-width:320px;height:580px;" data-auto-load="false">
+	<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+	<script>
+	Calendly.initInlineWidget({
+	url: 'https://calendly.com/kedar_more'
+	});
+	</script>
+	</div>
+	<!-- Calendly inline widget end -->
+
+
 
 	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
@@ -280,7 +292,15 @@
 			return false;
 		});
 	});
-    </script>
+    	</script>
+	<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+
+	Calendly.initInlineWidget({
+	 url: 'https://calendly.com/kedar_more',
+	 parentElement: document.getElementById('SAMPLEdivID'),
+	 prefill: {},
+	 utm: {}
+	});
 
 	<!-- Google Map -->
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
