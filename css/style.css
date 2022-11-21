@@ -501,10 +501,6 @@ a {
   .resume-item *:last-child {
     margin-bottom: 0; }
 
-.col-md-12 mb5 .school{
-  color: rgba(255, 255, 255, 0.3);
-}
-
 .blog-entry {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
