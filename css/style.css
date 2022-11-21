@@ -655,7 +655,7 @@ a {
     text-decoration: none;
   }
 
-  a.fa-github:hover, a.fa-github:active {
+  a.fa-github:hover {
     color: #6cc644;
     text-decoration: none;
   }
