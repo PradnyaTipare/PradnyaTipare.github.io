@@ -650,7 +650,7 @@ a {
     text-decoration-line: none;
   }
 
-  a.fa-github, a.fa-github:focus, a.fa-linkedin, a.fa-linkedin:focus, a.fa-instagram, a.fa-instagram:focus, a.fa-envolope, a.fa-envelope:focus{
+  a.fa-github, a.fa-github:focus, a.fa-linkedin, a.fa-linkedin:focus, a.fa-instagram, a.fa-instagram:focus, a.fa-envolope, a.fa-envelope:focus, a.fa-calendar, a.fa-calendar:focus{
     color: #ffffff;
     text-decoration: none;
   }
@@ -671,6 +671,11 @@ a {
   }
 
   a.fa-envelope:hover {
+    color: #84f9ff;
+    text-decoration: none;
+  }
+
+  a.fa-calendar:hover {
     color: #84f9ff;
     text-decoration: none;
   }
