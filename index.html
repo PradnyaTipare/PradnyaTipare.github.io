@@ -198,9 +198,7 @@
 
 							<li><div id="light">
 								<a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-								<video id="VisaChipCardVideo" width="600" controls>
-									<source src="https://www.youtube.com/watch?v=lLvaHQmoggU&ab_channel=KedarMore" type="video/mp4">
-								</video>
+								<iframe id="VisaChipCardVideo" width="840" height="472.5" src="https://www.youtube.com/embed/lLvaHQmoggU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							  </div>
 							  
 							  <div id="fade" onClick="lightbox_close();"></div>
@@ -316,7 +314,7 @@
 
 			function lightbox_open() {
 			var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-			window.scrollTo(0, 0);
+			window.scrollTo(200, 200);
 			document.getElementById('light').style.display = 'block';
 			document.getElementById('fade').style.display = 'block';
 			lightBoxVideo.play();
