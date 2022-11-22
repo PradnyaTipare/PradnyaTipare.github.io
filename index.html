@@ -16,45 +16,48 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+
 	<style>
-	.fa {
-	padding: 20px;
-	font-size: 30px;
-	width: 70px;
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-	}
+	
+	 .fa {
+	  padding: 20px;
+	  font-size: 30px;
+	  width: 70px;
+	  color: white;
+	  text-align: center;
+	  text-decoration: none;
+	  margin: 5px 2px;
+	  }
 
-	.fa:hover {
-		opacity: 0.7;
-	}
+	  .fa:hover {
+	    opacity: 0.7;
+	  }
 
-	.fa-linkedin {
-	background: #222;
-	color: white;
-	}
+	  .fa-linkedin {
+	  background: #222;
+	  color: white;
+	  }
 
-	.fa-instagram {
-	background: #222;
-	color: white;
-	}
+	  .fa-instagram {
+	  background: #222;
+	  color: white;
+	  }
 
-	.fa-github {
-		background: #222;
-		color: white;
-	}
+	  .fa-github {
+	    background: #222;
+	    color: white;
+	  }
 
-	.fa-envelope{
-		background: #222;
-		color: white;
-	}
-		
-	.fa-calendar{
-		background: #222;
-		color: white;
-	}
+	  .fa-envelope{
+	    background: #222;
+	    color: white;
+	  }
+	    
+	  .fa-calendar{
+	    background: #222;
+	    color: white;
+	  }
 
 	</style>
 
@@ -193,18 +196,15 @@
 							<li>Similar experiment was done with 1,2, 4 people and an in-depth analysis was done on the total time taken with variables such as complexity of the task, no of people, etc.</li>
 							<li>Inspired by a video game ‘Pokémon Red’ which was played by 748006 players in real time.</li>
 							<li><a href="https://github.com/KedarMore/Twitch-Plays-TwiPi/blob/master/conference-template-letter.pdf" target="_blank">Twitch Plays TwiPi</a></li>
-
-
-
-							<li><div id="light">
-								<a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-								<iframe id="VisaChipCardVideo" width="840" height="472.5" src="https://www.youtube.com/embed/lLvaHQmoggU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<li><div class="container">
+							  <div class="row">
+							        <a href="#headerPopup" id="headerVideoLink" target="_blank">Video</a>
+							     <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+							      <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/lLvaHQmoggU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							      <!-- <iframe class="embed-responsive-item" width="560" height="400" src="downloads/Kedar's Resume.pdf" ></iframe> -->
+							      </div>
 							  </div>
-							  
-							  <div id="fade" onClick="lightbox_close();"></div>
-							  
-							  <div>
-								<a href="#" onclick="lightbox_open();">Watch video</a></li></div></ul>
+							</div></li></div></ul>
 						
 					</div>
 
@@ -215,7 +215,9 @@
 						Participated in Asia-Pacific competition ‘ABU Robocon’ <div class="comment more"> and lead a team of 7 mechanical engineers to complete the tasks while working closely with the electronics and coding team.</li>
 							<li><strong>Frisbee throwing robot</strong> (manually controlled, frisbee could be thrown at a desired location accurately)</li>
 							<li><strong>Ball swinging robot</strong> (autonomous, used pneumatic systems)</li>
-							<li><strong>Quadrupedal robot</strong> (autonomous, used linear actuators and accelerometer for feedback)</li></div></ul>
+							<li><strong>Quadrupedal robot</strong> (autonomous, used linear actuators and accelerometer for feedback)</li></div>
+							
+						</ul>
 						
 					</div>
 
@@ -302,32 +304,30 @@
 	});
     	</script>
 
+
+	<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"> -->
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet"> -->
+	<link href="css/magnific-popup.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+
 		<script>
-			window.document.onkeydown = function(e) {
-			if (!e) {
-				e = event;
-			}
-			if (e.keyCode == 27) {
-				lightbox_close();
-			}
-			}
-
-			function lightbox_open() {
-			var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-			window.scrollTo(200, 200);
-			document.getElementById('light').style.display = 'block';
-			document.getElementById('fade').style.display = 'block';
-			lightBoxVideo.play();
-			}
-
-			function lightbox_close() {
-			var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-			document.getElementById('light').style.display = 'none';
-			document.getElementById('fade').style.display = 'none';
-			lightBoxVideo.pause();
-			}
-		</script>
-
+        $( document ).ready(function() {
+         $('#headerVideoLink').magnificPopup({
+          type:'inline',
+          midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        });
+          
+        });
+        </script>
 	<!-- Google Map -->
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     	<script src="js/google-map.js"></script> -->
