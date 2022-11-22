@@ -105,7 +105,7 @@
 				<div class="col-md-12 mb-5">
 					<div class="section-heading text-center">
 						<h2>My <strong>Resume</strong></h2> <br>
-						<a href="/downloads/Kedar's Resume.pdf" class="btn btn-secondary px-4 py-2 btn-sm" target="_blank" color: #ffffff>Take a look!</a>
+						<span class="school"><a href="/downloads/Kedar's Resume.pdf" class="btn btn-secondary px-4 py-2 btn-sm" target="_blank">Take a look!</a></span>
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -193,7 +193,20 @@
 							<li>Similar experiment was done with 1,2, 4 people and an in-depth analysis was done on the total time taken with variables such as complexity of the task, no of people, etc.</li>
 							<li>Inspired by a video game ‘Pokémon Red’ which was played by 748006 players in real time.</li>
 							<li><a href="https://github.com/KedarMore/Twitch-Plays-TwiPi/blob/master/conference-template-letter.pdf" target="_blank">Twitch Plays TwiPi</a></li>
-							<li><a href="https://www.youtube.com/watch?v=lLvaHQmoggU&ab_channel=KedarMore" target="_blank">Video</a></li></div></ul>
+
+
+
+							<li><div id="light">
+								<a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+								<video id="VisaChipCardVideo" width="600" controls>
+									<source src="https://www.youtube.com/watch?v=lLvaHQmoggU&ab_channel=KedarMore" type="video/mp4">
+								</video>
+							  </div>
+							  
+							  <div id="fade" onClick="lightbox_close();"></div>
+							  
+							  <div>
+								<a href="#" onclick="lightbox_open();">Watch video</a></li></div></ul>
 						
 					</div>
 
@@ -290,6 +303,32 @@
 		});
 	});
     	</script>
+
+		<script>
+			window.document.onkeydown = function(e) {
+			if (!e) {
+				e = event;
+			}
+			if (e.keyCode == 27) {
+				lightbox_close();
+			}
+			}
+
+			function lightbox_open() {
+			var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+			window.scrollTo(0, 0);
+			document.getElementById('light').style.display = 'block';
+			document.getElementById('fade').style.display = 'block';
+			lightBoxVideo.play();
+			}
+
+			function lightbox_close() {
+			var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+			document.getElementById('light').style.display = 'none';
+			document.getElementById('fade').style.display = 'none';
+			lightBoxVideo.pause();
+			}
+		</script>
 
 	<!-- Google Map -->
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
